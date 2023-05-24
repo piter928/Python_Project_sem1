@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-tak = 1
+
 #Read data
 df_Homicide_Race = pd.read_csv('Homicide_Race_data.csv', sep=',')
 df_Homicide_Age = pd.read_csv('Homicide_Age_data.csv', sep=',')
