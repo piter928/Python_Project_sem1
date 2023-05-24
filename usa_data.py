@@ -1,9 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
+tak = 1
 #Read data
-df_Homicide_Race = pd.read_csv('C:/Users/xXx_420dankmeme_xXx/Desktop/PRG/python/Python_projekt/Homicide_Race_data.csv', sep=',')
-df_Homicide_Age = pd.read_csv('C:/Users/xXx_420dankmeme_xXx/Desktop/PRG/python/Python_projekt/Homicide_Age_data.csv', sep=',')
+df_Homicide_Race = pd.read_csv('Homicide_Race_data.csv', sep=',')
+df_Homicide_Age = pd.read_csv('Homicide_Age_data.csv', sep=',')
 #Data frame
 df_Homicide_Race = pd.DataFrame(df_Homicide_Race)
 df_Homicide_Age = pd.DataFrame(df_Homicide_Age)
@@ -15,7 +15,7 @@ names_Homicide_Age = df_Homicide_Age.iloc[:, 0]
 data_Homicide_Age = df_Homicide_Age.iloc[:, 1]
 
 #===============Line chart homicide offenses================
-df_Line_Chart = pd.read_csv('C:/Users/xXx_420dankmeme_xXx/Desktop/PRG/python/Python_projekt/DataLineChart.csv', sep=';')
+df_Line_Chart = pd.read_csv('DataLineChart.csv', sep=';')
 
 df_Line_Chart = pd.DataFrame(df_Line_Chart)
 Years = df_Line_Chart['series'].values
@@ -27,7 +27,7 @@ ax0.set_ylabel('Rate per 100,000 people per year')
 ax0.set_title('Rate of homicide offenses by population for years 2011-2021')
 print(Years_Data)
 #==================Line chart Age Data=======================
-df_Race_Data = pd.read_csv('C:/Users/xXx_420dankmeme_xXx/Desktop/PRG/python/Python_projekt/PopulationAge2022.csv', sep=';')
+df_Race_Data = pd.read_csv('PopulationAge2022.csv', sep=';')
 df_Race_Data = pd.DataFrame(df_Race_Data)
 df_Race_Data = df_Race_Data.dropna(axis=0)
 age = df_Race_Data['Age'].values.astype(str)
@@ -38,7 +38,7 @@ ax01.set_xlabel('Age')
 ax01.set_ylabel('Percent')
 ax01.set_title('Population by age in 2022 (population - 333,287,557)')
 #==================Line chart Race Data=======================
-df_Race_Data = pd.read_csv('C:/Users/xXx_420dankmeme_xXx/Desktop/PRG/python/Python_projekt/PopulationRace2022.csv', sep=';')
+df_Race_Data = pd.read_csv('PopulationRace2022.csv', sep=';')
 df_Race_Data = pd.DataFrame(df_Race_Data)
 df_Race_Data = df_Race_Data.dropna(axis=0)
 Race = df_Race_Data['Race'].values.astype(str)
@@ -70,3 +70,4 @@ column_homicide_race = df_Homicide_Race.filter(like='value')"""
 
 
 #print(column_homicide_race_filtered)
+#C:/Users/xXx_420dankmeme_xXx/Desktop/PRG/python/Python_projekt/
